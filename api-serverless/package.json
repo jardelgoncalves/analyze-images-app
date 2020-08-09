@@ -1,0 +1,16 @@
+{
+  "name": "analyze-images",
+  "version": "1.0.0",
+  "description": "Serverless application to analyze images with AWS Rekognition",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jardel Gonçalves <jardelgoncalves.dev>",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.729.0",
+    "axios": "^0.19.2"
+  }
+}
