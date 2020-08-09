@@ -1,5 +1,8 @@
 # Analyze Image
 Serverless application to analyze images with AWS Rekognition
+<div align="center">
+  <img src="./screenshot.png" width="600" />
+</div>
 
 
 ## Setup and Run
