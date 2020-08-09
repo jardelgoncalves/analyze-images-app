@@ -5,3 +5,5 @@ export * from './Global';
 export * from './ProgressBar';
 export * from './Photo';
 export * from './RaisedButton';
+export * from './Loading';
+export * from './Alert';

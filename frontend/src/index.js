@@ -8,13 +8,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// const goToTop = useCallback(
-//   () => {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: 'smooth',
-//     })
-//   },
-//   []
-// )

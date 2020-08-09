@@ -16,16 +16,22 @@ const ButtonStyle = styled.button`
   cursor: pointer;
   margin-top: 6px;
   margin-bottom: 16px;
+  pointer-events: all;
 
   :hover {
     opacity: 0.8;
     transition: opacity ease-in-out 0.2s;
   }
+
+  :disabled {
+    background-color: #e6e6e6;
+    pointer-events: none;
+  }
 `;
 
-export const RaisedButton = ({ onClick }) => {
+export const RaisedButton = ({ onClick, loading }) => {
   return (
-    <ButtonStyle onClic={onClick}>
+    <ButtonStyle onClick={onClick} disabled={loading}>
       Analisar imagem
     </ButtonStyle>
   )

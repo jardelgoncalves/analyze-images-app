@@ -18,9 +18,12 @@ const InputStyle = styled.input`
   margin-top: 50px;
 `;
 
-export const Input = () => {
+export const Input = ({ onChange, name, value }) => {
   return (
     <InputStyle
+      onChange={onChange}
+      name={name}
+      value={value}
       placeholder="Insira a URL da imagem"
     />
   )
