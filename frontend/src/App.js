@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  Icon,
+  Container,
+  Input,
+  ProgressBar,
+  Photo,
+  RaisedButton,
+  Global,
+} from './components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Global />
+      <Container>
+        <Icon />
+        <h2>Identificador de imagens</h2>
+        <div className="container-form">
+          <Input />
+          <RaisedButton />
+        </div>
+        <dic className="container-result">
+          <Photo image="https://i.pinimg.com/originals/af/8b/e5/af8be54bde8aedec28710a93d2b4c563.jpg" />
+        </dic>
+        <ProgressBar label="Animal" />
+        <ProgressBar label="Gato" percentage={90} />
+      </Container>
+    </>
   );
 }
 
